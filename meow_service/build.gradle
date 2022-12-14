@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation('org.slf4j:slf4j-log4j12:2.0.5')
+
+    implementation("org.springframework.boot:spring-boot-starter-parent:2.3.3.RELEASE")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
+    implementation("io.projectreactor:reactor-core:3.4.23")
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'SaberAPI'
+include 'meow_service'
+include 'woof_service'
+
